@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+ #home{
+    background: linear-gradient(rgba(231, 214, 214, 0.7), rgba(0,0,0,.7)),url("img/fondo-home.jpg");
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh;
+ }
+
+ #home .container header{
+    background-color: rgba(26, 24, 24, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+ }
+
+ #home .container header .container-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+ }
+
+ #home .container header .container-header h1{
+    text-align: center;
+    color: #2481ac;
+}
+
+#home .container header .container-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;  
+}
+
+#home .container header .container-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#home .container header .container-header nav ul a:hover{
+    color:#2481ac;
+}
+
+#home .container .container-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#home .container .container-header .redes a:hover{
+    color:#2481ac;
+}
+
+#home .container .container-header .selected{
+    color: #2481ac;
+}
+
+#home .container .presentation{
+   max-width: 1100px;
+   height: 100vh;
+   margin: auto;
+   color: #fff; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#home .container .presentation .welcome{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+}
+
+#home .container .presentation h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#home .container .presentation h2 span {
+    font-size: 25px;
+    color:#2481ac;
+}
+
+#home .container .presentation .description{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;   
+}
+
+#home .container .presentation a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#home .container .presentation a:hover{
+    background-color: #2481ac;    
+}
+
+#icon-nav{
+    color: #fff;
+    display: none;
+}
+
+#aboutme{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#aboutme .container-photo{
+    max-width: 400px;
+    margin-right: 80px;   
+}
+
+#aboutme .container-photo img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;  
+    background-color: #f3f3f3 ;
+}
+
+#aboutme .me{
+    margin: 0 40px;
+}
+
+#aboutme .me .title-section{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;   
+}
+
+#aboutme .me h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#aboutme .me h2 span{
+    color:#2481ac;  
+}
+
+#aboutme .me h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#aboutme .me p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#aboutme .me a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+   transition: .5s; 
+}
+
+#aboutme .me a:hover{
+    background-color: #2481ac;
+    color: #fff;
+}
+
+#services{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#services .title-section{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px; 
+}
+
+#services .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#services .fila .service{
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#services .fila .service:hover{
+    box-shadow: 5px 5px 10px #565656,-5px -5px 10px #8a8a8a;
+}
+
+#services .fila .service h4{
+    font-size: 22px;
+    margin-bottom:  25px;  
+}
+
+#services .fila .service .icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#services .fila .service hr{
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#services .fila .service ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#services .fila .service ul li{
+    margin: 0px 2px;
+
+}
+
+#services .fila p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.container-skills{
+    background: linear-gradient(#2481ac, rgba(33,16,16,.8)), url("img/fondo-skills.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container-skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.container-skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-skills .skill .list{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.container-skills .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.container-skills .skill .barra .barra-progress1{
+    background-color: #fff;
+    width: 95%;
+    height: 6px;
+    animation: progress1 2s forwards;
+}
+
+.container-skills .skill .barra .barra-progress2{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progress2 2s forwards;
+}
+
+.container-skills .skill .barra .barra-progress3{
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progress3 2s forwards;
+}
+
+@keyframes progress1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes progress2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes progress3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+#portfolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portfolio .title-section{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px; 
+}
+
+#portfolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyect{
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyect img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .fila .proyect:hover img{
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyect .info{
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #2481ac;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyect:hover .info{
+    opacity: 1;
+    bottom: 0;   
+}
+
+#contact{
+    padding: 100px 15px;
+}
+
+#contact .title-section{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contact .container-form{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .container-form .fila{
+    margin-bottom: 15px;
+}
+
+#contact .container-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .container-form input,
+#contact .container-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contact .container-form .mitad input{
+    width: 48%;
+}
+
+#contact .container-form .input-full{
+    width: 100%;
+}
+
+#contact .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#contact .btn-enviar:hover{
+    background-color: #2481ac;
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/* seccion responsive */
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0,0,0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center; 
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    #icon-nav{
+       display: block ;
+    }
+    #home .container .presentation h2{
+        font-size: 40px;
+    }
+    #aboutme{
+        padding: 50px 0;
+        display: block;
+    }
+    #aboutme .container-photo{
+        max-width: 200px;
+        margin: auto;
+    }
+    #aboutme .container-photo img{
+        padding: 8px;
+    }
+    #aboutme .me .title-section{
+        text-align: center;
+    }
+    #aboutme .me h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    #services{
+        padding: 50px 15px;
+    }
+    #services .fila{
+        display: block;
+    }
+    #services .fila .service{
+        margin: 10px auto;
+    }
+    .container-skills{
+        padding: 50px 20px;
+    }
+    #portfolio{
+        padding: 50px 0;
+    }
+    #portfolio .fila{
+        display: block;
+    }
+    #portfolio .fila .proyect{
+        margin: 10px auto;
+    }
+    #contact{
+        padding: 50px 15px;
+    }
+    #contact .container-form .mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .container-form .mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

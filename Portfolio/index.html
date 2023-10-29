@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css" />
+  <title>ML Web Developer</title>
+</head>
+
+<body>
+  <section id="home">
+    <div class="container">
+      <header>
+        <div class="container-header">
+          <h1>Milagros</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#home" class="selected" onclick="seleccionar(this)">Home</a></li>
+              <li><a href="#aboutme" onclick="seleccionar(this)">About Me</a></li>
+              <li><a href="#services" onclick="seleccionar(this)">Services</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+              <li><a href="#contact" onclick="seleccionar(this)">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="icon-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+            <a href="#"> <i class="fa-brands fa-github"></i> </a>
+          </div>
+        </div>
+      </header>
+      <div class="presentation">
+        <p class="welcome">Welcome</p>
+        <h2>I´m<span>Milagros C. Andrada</span>, Web Developer </h2>
+        <p class="description">Student of Information Systems Engineering at UTN and work in Web Development: Front End, Back End and Databases.</p>
+        <a href="#portfolio"> Go to Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <section id="aboutme">
+    <div class="container-photo">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="me">
+      <p class="title-section">About Me</p>
+      <h2>Hi! I´m <span>Milagros C. Andrada </span></h2>
+      <h3>Web Developer</h3>
+      <p>I am a student of Information Systems Engineering at UTN. 
+        I have also taken different courses in different institutions and I am also self-taught. I work in Web Development: Front End, Back End and Databases.</p>
+      <p>I have two years of experience in the programming world.</p>
+        <a href="#">Download CV</a>
+  </div>
+  </section>
+  <section id="services">
+    <h3 class="title-section">My Services</h3>
+    <div class="fila">
+      <div class="service">
+        <span class="icon"><i class="fa-solid fa-code"></i></span>
+        <h4>Web Site Desing Front-End</h4>
+        <hr>
+        <ul class="services-tag">
+          <li>JavaScript</li>
+          <li>React.Js</li>
+          <li>Angular</li>  
+        </ul>
+        <p>I develop client-side web pages using HTML layout, CSS styling and different Js frameworks/libraries depending on the client's needs.</p>
+      </div>
+      <div class="service">
+        <span class="icon"><i class="fa-solid fa-code"></i></span>
+        <h4>Web Site Desing Back-End</h4>
+        <hr>
+        <ul class="services-tag">
+          <li>JavaScript</li>
+          <li>Node.Js</li>
+        </ul>
+        <p>I develop server-side web pages with Node.Js using Express, Nodemon, MongoDB Compass and Mongoose. </p>
+      </div>
+      <div class="service">
+        <span class="icon"><i class="fa-solid fa-code"></i></span>
+        <h4>Web Site Desing Databases</h4>
+        <hr>
+        <ul class="services-tag">
+          <li>MongoDB</li>
+          <li>NoSQL</li>
+          <li>SQL</li> 
+        </ul>
+        <p>I am in charge of developing server-side web pages with Postman as a rest client to be able to use the different http requests. </p>
+      </div>
+    
+    </div>
+  </section>
+  <div class="container-skills" id="skills">
+   </h3>SKILLS</h3>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="list"></span>Html & Css</p>
+        <span class="porcentaje">95%</span>
+      </div>
+      <div class="barra">
+        <div id="html" class=""></div>
+    </div>
+    </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="list"></span>JavaScript</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class=""></div>
+        </div>
+      </div>
+
+      <div class="skill">
+            <div class="info">
+                <p><span class="list"></span>Databases</p>
+                <span class="porcentaje">80%</span>
+            </div>
+      <div class="barra">
+      <div id="data" class=""></div>
+      </div>
+     </div>
+
+  </div>
+  <section id="portfolio">
+    <h3 class="title-section">My Proyects</h3>
+    <div class="fila">
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/reactjs.jpg" alt="">
+        <div class="info">
+          <h4>Ecommerce using Firebase and Boostrap.</h4>
+          <p>Web Desing</p>
+        </div>
+      </div>
+
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/alta-react.jpg" alt="">
+        <div class="info">
+          <h4>User registration</h4>
+          <p>Web Desing</p>
+        </div>
+      </div>
+
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/login-react.jpg" alt="">
+        <div class="info">
+          <h4>User login</h4>
+          <p>Web Desing</p>
+        </div>
+      </div>
+
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/detalle-react.jpg" alt="">
+        <div class="info">
+          <h4>Product detail </h4>
+          <p>Web Desing</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="fila">
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/angularj.jpg" alt="">
+        <div class="info">
+          <h4>Ecommerce using a Mercado Libre API and Material UI</h4>
+          <p>Web Desing</p>
+        </div>
+      </div>
+
+      <div class="proyect">
+        <div class="overlay"></div>
+        <img src="img/alta-angular.jpg" alt="">
+        <div class="info">
+          <h4>User registration</h4>
+          <p>Web Desing</p>
+        </div>
+        </div>
+
+        <div class="proyect">
+          <div class="overlay"></div>
+          <img src="img/login-angular.jpg" alt="">
+          <div class="info">
+            <h4>User login</h4>
+            <p>Web Desing</p>
+          </div>
+        </div>
+      
+    </div>
+    
+    </div>
+  </section>
+  <section id="contact">
+    <h3 class="title-section">Contact Me Now</h3>
+    <div class="container-form">
+      <form action="">
+        <div class="fila mitad">
+          <input type="text" placeholder="Full Name" class="input-mitad">
+          <input type="email" placeholder="Email Address" class="input-mitad"> 
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Subject..." class="input-full">
+        </div>
+        <div class="fila">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="btn-enviar">
+      </form>
+    </div>
+
+  </section>
+  <footer>
+    <p>All rights reserved - 2023</p>
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+      <a href="#"> <i class="fa-brands fa-github"></i> </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
